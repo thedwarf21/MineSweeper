@@ -72,10 +72,10 @@ class FieldButton extends HTMLDivElement {
    */
   changeButtonState(event) {
     event.preventDefault();
-    document.currentController.setSmiley('default');
 
     let scope = document.currentController.scope;
     if (!scope.game_over) {
+      document.currentController.setSmiley('default');
       this.state = this.state == FieldButton.STATE_DEFAULT
                  ? FieldButton.STATE_FLAGGED
                  : FieldButton.STATE_DEFAULT;
