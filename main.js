@@ -29,7 +29,7 @@ const SMILEY = {
 	default: ":)",
 	fear: ":•",
 	victory: "8)",
-	defeat: ""
+	defeat: ":("
 }
 
 
