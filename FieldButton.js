@@ -26,7 +26,10 @@ class FieldButton extends HTMLDivElement {
     this.button.classList.add("button");
     this.appendChild(this.button);
 
-    this.button.addEventListener('mousedown', ()=> { document.currentController.setSmiley('fear'); });
+    this.button.addEventListener('mousedown', ()=> {
+      if (!document.currentController.scope.game_over)
+        document.currentController.setSmiley('fear');
+    });
     this.button.addEventListener('click', ()=> { this.buttonClicked(); });
     this.addEventListener('contextmenu', (e)=> { this.changeButtonState(e); });
   }
