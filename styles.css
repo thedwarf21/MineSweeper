@@ -1,0 +1,115 @@
+/* Affichage du panneau supérieur */
+#top-panel {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+button#btn-restart {
+	width: 7vh;
+	height: 7vh;
+	border-radius: 50%;
+	border: none;
+	box-shadow: 0 0 0.5vh;
+	background-color: #fff5be;
+}
+button:active { transform: scale(0.98); }
+#btn-restart:active { box-shadow: 0 0 0.2vh; }
+
+#emoji-face {
+  transform: rotate(90deg) scale(1.8, 1);
+  font-size: 30px;
+  width: 100%;
+  height: 42px;
+  font-family: sans serif;
+}
+
+#flags-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 5vh;
+  width: 10vh;
+  margin-top: 1vh;
+  border-radius: 0.5vh;
+
+  font-family: Monospace;
+  font-weight: bold;
+  font-size: 4vh;
+  
+  color: red;
+  text-shadow: 0.2vh 0.2vh black;
+  background: #0005;
+  box-shadow: inset 0 0 1vh black;
+}
+
+
+/* Champ de mines virtuel */
+#mine-field {
+	display: grid;
+	box-shadow: 0.2vh 0.2vh 1vh black;
+	margin-top: 2vh;
+	padding: 1vh;
+	border-radius: 1vh;
+	background: #416f86;
+}
+
+/* Cases du champ de mines virtuel */
+.square {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+
+	height: 8vh;
+	width: 8vh;
+	font-weight: bold;
+	font-family: Monospace;
+	font-size: 5vh;
+	text-align: center;
+	border: 0.1vh dotted #0009;
+	background: #FFFD;
+}
+
+.value0 { color: transparent; }
+.value1 { color: steelblue; }
+.value2 { color: green; }
+.value3 { color: red; }
+.value4 { color: darkblue; }
+.value5 { color: brown; }
+.value6 { color: #666; }
+.value7 { color: #333; }
+.value8 { color: black; }
+
+.button {
+	border-radius: 10%;
+	width: calc(100% - 1vh);
+	height: calc(100% - 1vh);
+	border: 0.1vh solid gray;
+	background: lightgray;
+	cursor: pointer;
+}
+.button:active { box-shadow: inset 0 0 0.5vh; }
+
+.flagged-square {
+	background: #0D560D;
+	clip-path: polygon(0% 100%, 65% 95%, 65% 40%, 0% 20%, 70% 0%, 70% 95%, 100% 100%);
+}
+
+.unfound-mine {
+	clip-path: polygon(47% 100%, 47% 80%, 
+					   32% 72%, 18% 86%, 14% 82%, 28% 68%, 
+					   23% 53%, 0% 53%, 0% 47%, 23% 47%,
+					   28% 32%, 14% 18%, 18% 14%, 32% 28%, 
+					   47% 23%, 47% 0%, 53% 0%, 53% 23%, 
+					   68% 28%, 82% 14%, 86% 18%, 72% 32%, 
+					   77% 47%, 100% 47%, 100% 53%, 77% 53%,
+					   72% 68%, 86% 82%, 82% 86%, 68% 72%, 
+					   53% 80%, 53% 100%);
+	background: gray;
+}
+
+.error { background: #CC0000 }
+

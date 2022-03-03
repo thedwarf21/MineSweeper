@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base href="" />
+    <meta charset="utf8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/png" href="spaceship.png" />
+    <title>Roquefort Softwares' MineSweeper</title>
+
+    <!-- Styles et fonts -->
+    <link rel="stylesheet" type="text/css" href="styles.css"/>
+    
+    <!-- Scripts -->
+    <script type="text/javascript" src="rs_wcl.js"></script>
+    <script type="text/javascript" src="FieldButton.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+
+    <!-- Lancement de l'initialisation -->
+    <script type="text/javascript">
+      document.currentController = new MineSweeperController();
+    </script>
+  </head>
+
+  <!-- Corps de la page-->
+  <body onload="document.currentController.pageLoaded()">
+    <div id="top-panel">
+      <button id="btn-restart" onclick="document.currentController.restart()">
+        <div id="emoji-face">:)</div>
+      </button>
+      <span id="flags-left"></span>
+    </div>
+    <center>
+      <div id="mine-field">
+      </div>
+    </center>
+  </body>
+</html>
