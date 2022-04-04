@@ -7,7 +7,7 @@ Like in classic MineSweeper, left clicking reveals the number of mines around ce
 
 The "?" state, usable in the Windows original game, is not usable in this web version of the game, not for complexity reasons (only 2 code lines are necessary to manage with this), but beacause it is not really useful for player, and brings nothing to gameplay, in my opinion.
 
-Like in AsteroidsHarvest [github.com/thedwarf21/AsteroidsHarvest](https://github.com/thedwarf21/AsteroidsHarvest), this game embarks a **manifest.json** file, allowing you to add the page to the home screen of your mobile device, from your browser's menu, in order to use it like a standalone landscape display forced application.
+Like in [AsteroidsHarvest](https://github.com/thedwarf21/AsteroidsHarvest), this game embarks a **manifest.json** file, allowing you to add the page to the home screen of your mobile device, from your browser's menu, in order to use it like a standalone landscape display forced application.
 
 ## En Français, pour les Anglophobes
 Ceci est un Démineur réalisé uniquement en code. C'est à dire qu'aucun visuel n'a été utilisé dans le rendu graphique du jeu. L'affichage des drapeaux et des mines a été codé en CSS (polygones créés via la propriété **clip-path**). Seule l'icône du jeu est une image (pour ajout à l'écran d'accueil de votre appareil mobile, c'est mieux s'il y a une icône).
@@ -18,4 +18,4 @@ Comme dans le Démineur classique, un clic gauche révèle le nombre de mines au
 
 Vous constaterez que l'état "?", utilisable sur le jeu d'origine proposé par Windows, n'existe pas dans cette version. N'en voyant pas l'utilité, j'ai préféré ne pas gérer cette état. Non que cela aurait complexifié le programme (je ne vais pleurer pour deux lignes de codes à écrire, franchement), mais que cette fonctionnalité n'apporte rien au gameplay, à momn avis.
 
-Comme pour le jeu AsteroidsHarvest [github.com/thedwarf21/AsteroidsHarvest](https://github.com/thedwarf21/AsteroidsHarvest), ce jeu embarque un fichier **manifest.json**, permettant d'ajouter un lien vers la page à l'écran d'accueil de votre téléphone, depuis le menu de votre navigateur, afin que celui-ci se comporte comme une application autonome forçant l'affichage en orientation paysage (techniquement, c'est un lien internet, mais à l'utilisation, c'est comme si vous l'aviez téléchargé depuis le store).
+Comme pour le jeu [AsteroidsHarvest](https://github.com/thedwarf21/AsteroidsHarvest), ce jeu embarque un fichier **manifest.json**, permettant d'ajouter un lien vers la page à l'écran d'accueil de votre téléphone, depuis le menu de votre navigateur, afin que celui-ci se comporte comme une application autonome forçant l'affichage en orientation paysage (techniquement, c'est un lien internet, mais à l'utilisation, c'est comme si vous l'aviez téléchargé depuis le store).
