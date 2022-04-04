@@ -19,3 +19,5 @@ Comme dans le Démineur classique, un clic gauche révèle le nombre de mines au
 Vous constaterez que l'état "?", utilisable sur le jeu d'origine proposé par Windows, n'existe pas dans cette version. N'en voyant pas l'utilité, j'ai préféré ne pas gérer cette état. Non que cela aurait complexifié le programme (je ne vais pleurer pour deux lignes de codes à écrire, franchement), mais que cette fonctionnalité n'apporte rien au gameplay, à momn avis.
 
 Comme pour le jeu [AsteroidsHarvest](https://github.com/thedwarf21/AsteroidsHarvest), ce jeu embarque un fichier **manifest.json**, permettant d'ajouter un lien vers la page à l'écran d'accueil de votre téléphone, depuis le menu de votre navigateur, afin que celui-ci se comporte comme une application autonome forçant l'affichage en orientation paysage (techniquement, c'est un lien internet, mais à l'utilisation, c'est comme si vous l'aviez téléchargé depuis le store).
+
+Temps de réalisation : 2 jours
